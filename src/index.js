@@ -1,14 +1,15 @@
-import React from 'react';
+import React, {Fragment} from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
-import App from './App';
+import "tachyons";
 import * as serviceWorker from './serviceWorker';
+import {robots}  from './robots'
+import App from './containers/App'
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+    <App robots={robots}/>
+
+    ,document.getElementById('root')
 );
 
 // If you want your app to work offline and load faster, you can change
